@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neo-Store</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./Favicon-neo.svg" type="image/svg+xml">
+
+  <!-- 
+    - css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+
+  
+</head>
+
+
+  
+  
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" id="header">
+
+   
+    <div class="header-bottom skewBg" data-header>  
+      <div class="container">
+
+        <a href="index.html" class="logo">
+          <img src="./assets/images/neologo (1).svg" alt=""  width="40%">
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#header" class="navbar-link skewBg" data-nav-link>Inicio</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#Demos" class="navbar-link skewBg" data-nav-link>Juegos </a>
+            </li>
+           
+
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link skewBg" data-nav-link>Categorias</a>
+            </li>
+            
+
+            <li class="navbar-item">
+              <a href="#shop" class="navbar-link skewBg" data-nav-link>Shop</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link skewBg" data-nav-link>Novedades</a>
+            </li>
+            <li class="navbar-item">
+              <a href="#footer" class="navbar-link skewBg" data-nav-link>Contactanos</a>
+            </li>
+
+            
+
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+
+          <button class="cart-btn" aria-label="cart">
+            <ion-icon name="cart"></ion-icon>
+
+            <span class="cart-badge">1</span>
+          </button>
+
+          
+          
+          <button class="search-btn" aria-label="open search" data-search-toggler>
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <button class="login-btn" aria-label="open Login" data-login-toggler >
+            <ion-icon name="person-circle-outline" ></ion-icon>
+          </button>
+
+
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-outline" class="menu"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+          </button>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" aria-label="search" placeholder="Buscar..." class="search-field">
+
+      <button class="search-submit" aria-label="submit search" data-search-toggler>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+      <button class="search-close" aria-label="close search" data-search-toggler></button>
+    </div>
+
+  </div>
+
+
+  <!-- Login -->
+  <div class="login-container" data-login-box>
+    
+      
+    <div class="start">
+      <div class="elbody">
+      
+              <main>
+      
+                      <div class="contenedor__todo">
+                           <div class="caja__trasera">
+                              <div class="caja__trasera-login">
+                            
+                                <h3>¿Ya tienes una cuenta?</h3>
+                                <p>Inicia sesión para entrar en la página</p>
+                                <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                              </div>
+                              <div class="caja__trasera-register">
+                                <h3>¿Aún no tienes una cuenta?</h3>
+                                <p>Regístrate para que puedas iniciar sesión</p>
+                                <button id="btn__registrarse">Regístrarse</button>
+                              </div>
+                          </div>
+      
+                          <!--Formulario de Login y registro-->
+                          <div class="contenedor__login-register">
+                          <!--Login-->
+                           <form action="" class="formulario__login">
+                            <center>
+                            <img src="./Favicon-neo.svg" width="20%"  alt="neo logo"></center>
+                              <h2>Iniciar Sesión</h2>
+                              <input type="text" placeholder="Correo Electronico">
+                              <input type="password" placeholder="Contraseña">
+                              <button>Entrar</button>
+                            </form>
+                           
+                            <!--Register-->
+                              <form action="" class="formulario__register">
+                                <center>
+                                <img src="./Favicon-neo.svg" width="20%"  alt="neo logo"></center>
+                                <h2>Regístrarse</h2>
+                               <input type="text" placeholder="Nombre completo">
+                                <input type="text" placeholder="Correo Electronico">
+                               <input type="text" placeholder="Usuario">
+                               <input type="password" placeholder="Contraseña">
+                               <button >Regístrarse</button>
+                              
+                              </form>
+                        
+                      </div>    
+                                   
+              </main>   
+            </div> <button class="login-close" aria-label="close search" data-login-toggler></button>          
+           </div>
+    </div>
+  </div>
+
+
+
+<style>
+  .span{
+    font-size: 65px;
+  }
+  .section-text{
+    color: whitesmoke;
+    font-size: 22px;
+  }
+</style>
+
+  <main>
+    <article>
+
+      
+   
+      
+      <!-- 
+        - #SHOP
+      -->
+          <!-- TECLADOS-------------- -->
+          <section class="section shop" id="shop" aria-label="shop"
+          style="background-color: transparent">
+          <div class="container">
+  
+            <h2 class="h2 section-title">
+                <span class="span">Shop</span>
+            </h2>
+  
+            <p class="section-text" >
+             Todos los perifericos y articulos gamer que necesites para mejorar tu experiencia lo encuentras aqui en Neo-Store. 
+            </p> <br><br><br>
+            
+            <h2 class="h2 section-title">
+               <span class="span">teclados</span>
+            </h2>
+            <p class="section-text">
+              
+             </p>
+            
+            <ul class="has-scrollbar">
+  
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/Redragon Kumara K552 QWERTY Outemu Red.webp" width="300" height="260" loading="lazy"
+                      alt="SillasGamer" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">ver mas</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Redragon Kumara K552 QWERTY Outemu Red</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 164.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="cart"></ion-icon>
+                      </button>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/2Redragon Kumara K552 QWERTY Outemu Red.webp" width="300" height="260" loading="lazy"
+                      alt="Gears 5 Xbox Controller" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">Ver mas</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Redragon Kumara K552 QWERTY Outemu Red</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 191.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="cart"></ion-icon>
+                      </button>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/3Redragon Shiva K512 RGB QWERTY.webp" width="300" height="260" loading="lazy"
+                      alt="GeForce RTX 2070" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Redragon Shiva K512 RGB QWERTY</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 149.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="cart"></ion-icon>
+                      </button>
+                    </div>
+  
+                  </div>
+  
+                </div>
+              </li>
+  
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/4redragon Fizz Pro K616-RGB QWERTY.jpg" width="300" height="260" loading="lazy"
+                      alt="Virtual Reality Smiled" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Redragon Fizz Pro K616-RGB QWERTY</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 220.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="CART"></ion-icon>
+                      </button>
+                    </div>
+                    
+  
+                  </div>
+  
+                </div>
+                
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/5Teclado gamer Redragon Dyaus K509 QWERTY.webp" width="300" height="260" loading="lazy"
+                      alt="Virtual Reality Smiled" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Teclado gamer Redragon Dyaus K509 QWERTY</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 108.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="CART"></ion-icon>
+                      </button>
+                    </div>
+                    
+  
+                  </div>
+  
+                </div>
+                
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/6K61 Mechanical keyboard RGB Backlight.webp" width="300" height="260" loading="lazy"
+                      alt="Virtual Reality Smiled" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">K61 Mechanical keyboard RGB Backlight</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 70.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="CART"></ion-icon>
+                      </button>
+                    </div>
+                    
+  
+                  </div>
+  
+                </div>
+                
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/7 Logitech Serie G G915 TKL QWERTY.webp" width="300" height="260" loading="lazy"
+                      alt="Virtual Reality Smiled" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title"> Logitech Serie G G915 TKL QWERTY</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price">S/ 888.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="CART"></ion-icon>
+                      </button>
+                    </div>
+                    
+  
+                  </div>
+  
+                </div>
+                
+              </li>
+              <li class="scrollbar-item">
+                <div class="shop-card">
+  
+                  <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                    <img src="./assets/images/teclados/8Corsair Platinum K95 QWERTY.webp" width="300" height="260" loading="lazy"
+                      alt="Virtual Reality Smiled" class="img-cover">
+                  </figure>
+  
+                  <div class="card-content">
+  
+                    <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Corsair Platinum K95 QWERTY</a>
+                    </h3>
+  
+                    <div class="card-wrapper">
+                      <p class="card-price"> S/719.00</p>
+  
+                      <button class="card-btn">
+                        <ion-icon name="CART"></ion-icon>
+                      </button>
+                    </div>
+                    
+  
+                  </div>
+  
+                </div>
+                
+              </li>
+  
+            </ul>
+  
+          </div>
+           <center>
+            <br><br><button class="btn skewBg">ver mas</button>
+        </center>
+
+        <div class="container">
+          <br><br><br>
+          <h2 class="h2 section-title">
+             <span class="span">MOUSES</span>
+          </h2>
+          <p class="section-text">
+            
+           </p>
+          
+          <ul class="has-scrollbar">
+  
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/1Razer deathadder essential.jpg" width="300" height="260" loading="lazy"
+                    alt="SillasGamer" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">ver mas</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH G502X PLUS</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/ 130.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="cart"></ion-icon>
+                    </button>
+                  </div>
+  
+                </div>
+  
+              </div>
+            </li>
+  
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/2LOGITECH MX518 LEGENDARY HERO 16K.jpg" width="300" height="260" loading="lazy"
+                    alt="Gears 5 Xbox Controller" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">Ver mas</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH MX518 LEGENDARY HERO 16K</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/ 151.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="cart"></ion-icon>
+                    </button>
+                  </div>
+  
+                </div>
+  
+              </div>
+            </li>
+  
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/3LOGITECH G PRO SUPERLIGHT RED.jpg" width="300" height="260" loading="lazy"
+                    alt="GeForce RTX 2070" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH G PRO SUPERLIGHT RED</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/ 414.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="cart"></ion-icon>
+                    </button>
+                  </div>
+  
+                </div>
+  
+              </div>
+            </li>
+  
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/4LOGITECH G PRO SUPERLIGHT BLACK.jpg" width="300" height="260" loading="lazy"
+                    alt="Virtual Reality Smiled" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH G PRO SUPERLIGHT BLACK</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/ 410.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="CART"></ion-icon>
+                    </button>
+                  </div>
+                  
+  
+                </div>
+  
+              </div>
+              
+            </li>
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/5LOGITECH G PRO SUPERLIGHT WHITE.jpg" width="300" height="260" loading="lazy"
+                    alt="Virtual Reality Smiled" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH G PRO SUPERLIGHT WHITE</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/ 404.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="CART"></ion-icon>
+                    </button>
+                  </div>
+                  
+  
+                </div>
+  
+              </div>
+              
+            </li>
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/6LOGITECH G PRO LIGTHSPEED.jpg" width="300" height="260" loading="lazy"
+                    alt="Virtual Reality Smiled" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH G PRO LIGTHSPEED</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/ 405.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="CART"></ion-icon>
+                    </button>
+                  </div>
+                  
+  
+                </div>
+  
+              </div>
+              
+            </li>
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/7LOGITECH G705.jpg" width="300" height="260" loading="lazy"
+                    alt="Virtual Reality Smiled" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> LOGITECH G705</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price">S/298.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="CART"></ion-icon>
+                    </button>
+                  </div>
+                  
+  
+                </div>
+  
+              </div>
+              
+            </li>
+            <li class="scrollbar-item">
+              <div class="shop-card">
+  
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="./assets/images/mouse/8LOGITECH G305 LIGHTSPEED.jpg" width="300" height="260" loading="lazy"
+                    alt="Virtual Reality Smiled" class="img-cover">
+                </figure>
+  
+                <div class="card-content">
+  
+                  <a href="#" class="card-badge skewBg">VER MAS</a>
+  
+                  <h3 class="h3">
+                    <a href="#" class="card-title">LOGITECH G305 LIGHTSPEED</a>
+                  </h3>
+  
+                  <div class="card-wrapper">
+                    <p class="card-price"> S/140.00</p>
+  
+                    <button class="card-btn">
+                      <ion-icon name="CART"></ion-icon>
+                    </button>
+                  </div>
+                  
+  
+                </div>
+  
+              </div>
+              
+            </li>
+  
+          </ul>
+  
+        </div>
+         <center>
+          <br><button class="btn skewBg">ver mas</button>
+      </center>
+
+<!-- controllers************************************ -->
+
+      <div class="container">
+        <br><br><br>
+        <h2 class="h2 section-title">
+           <span class="span">GAMEPADS & JOYSTICKS</span>
+        </h2>
+        <p class="section-text">
+          
+         </p>
+        
+        <ul class="has-scrollbar">
+
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/1TIMON Y PEDAL LOGITECH G29 RACING WHEEL BLACK.png" width="300" height="260" loading="lazy"
+                  alt="SillasGamer" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">ver mas</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">TIMON Y PEDAL LOGITECH G29 RACING WHEEL BLACK</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/1100.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="cart"></ion-icon>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/2JOYSTICK PALANCA DE CAMBIOS LOGITECH DRIVING FORCE.jpg" width="300" height="260" loading="lazy"
+                  alt="Gears 5 Xbox Controller" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">Ver mas</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">JOYSTICK PALANCA DE CAMBIOS LOGITECH DRIVING FORCE</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/ 260.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="cart"></ion-icon>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/3GAMEPAD MICROSOFT XBOX ROBOT WHITE INALAMBRICO MULTICOMPATIBLE.jpg" width="300" height="260" loading="lazy"
+                  alt="GeForce RTX 2070" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">VER MAS</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">GAMEPAD MICROSOFT XBOX ROBOT WHITE INALAMBRICO MULTICOMPATIBLE</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/ 243.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="cart"></ion-icon>
+                  </button>
+                </div>
+
+              </div>
+
+            </div>
+          </li>
+
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/4GAMEPAD REDRAGON HARROW WIRELESS 2.4 GHZ BLACK.jpg" width="300" height="260" loading="lazy"
+                  alt="Virtual Reality Smiled" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">VER MAS</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">GAMEPAD REDRAGON HARROW WIRELESS 2.4 GHZ BLACK</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/103.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="CART"></ion-icon>
+                  </button>
+                </div>
+                
+
+              </div>
+
+            </div>
+            
+          </li>
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/5GAMEPAD LOGITECH F710 WIRELESS USB.jpg" width="300" height="260" loading="lazy"
+                  alt="Virtual Reality Smiled" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">VER MAS</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">GAMEPAD LOGITECH F710 WIRELESS USB</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/ 160.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="CART"></ion-icon>
+                  </button>
+                </div>
+                
+
+              </div>
+
+            </div>
+            
+          </li>
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/6LOGITECH G923 VOLANTE CON PEDALES TRUEFORCE RACING WHEEL XBOX - PC - PS.jpg" width="300" height="260" loading="lazy"
+                  alt="Virtual Reality Smiled" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">VER MAS</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">LOGITECH G923 VOLANTE CON PEDALES TRUEFORCE RACING WHEEL XBOX - PC - PS</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/ 1098.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="CART"></ion-icon>
+                  </button>
+                </div>
+                
+
+              </div>
+
+            </div>
+            
+          </li>
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/7GAMEPAD T-DAGGER SCORPIO BLACK BLUETOOTH Y CABLE MULTICOMPATIBLE.jpg" width="300" height="260" loading="lazy"
+                  alt="Virtual Reality Smiled" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">VER MAS</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">GAMEPAD T-DAGGER SCORPIO BLACK BLUETOOTH Y CABLE MULTICOMPATIBLE</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price">S/125.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="CART"></ion-icon>
+                  </button>
+                </div>
+                
+
+              </div>
+
+            </div>
+            
+          </li>
+          <li class="scrollbar-item">
+            <div class="shop-card">
+
+              <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                <img src="./assets/images/gamepads/8GAMEPAD MICROSOFT XBOX ELECTRIC VOLT GREEN INALAMBRICO MULTICOMPATIBLE.jpg" width="300" height="260" loading="lazy"
+                  alt="Virtual Reality Smiled" class="img-cover">
+              </figure>
+
+              <div class="card-content">
+
+                <a href="#" class="card-badge skewBg">VER MAS</a>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">GAMEPAD MICROSOFT XBOX ELECTRIC VOLT GREEN INALAMBRICO MULTICOMPATIBLE</a>
+                </h3>
+
+                <div class="card-wrapper">
+                  <p class="card-price"> 
+                    S/ 243.00</p>
+
+                  <button class="card-btn">
+                    <ion-icon name="CART"></ion-icon>
+                  </button>
+                </div>
+                
+
+              </div>
+
+            </div>
+            
+          </li>
+
+        </ul>
+
+      </div>
+      <center>
+        <br><button class="btn skewBg">ver mas</button>
+      </center>
+        </section>
+      
+
+      <!-- CONTROLLERS -->
+
+
+
+      <!-- HEADSET -->
+
+      <!-- MICROFONOS -->
+
+      <!-- SILLAS GAMER -->
+
+
+      <!-- OTROS PERIFERICOS -->
+
+
+
+     
+
+
+
+
+      <!-- 
+        - #CONTACTO
+      -->
+
+      <section class="newsletter"  id="footer" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <h2 class="h2">
+              <span class="span">Contactanos</span>
+            </h2>
+
+            
+          </div>
+
+        </div>
+        
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+  
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Neo Store</a>
+
+          <p class="footer-text">
+            Plataforma de venta de juegos y productos gamer.
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="item-text">
+                Ubicanos : Av. Fernando Wiesse Cdra. 44, San Juan de Lurigancho 15416
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset"></ion-icon>
+              </div>
+
+              <a href="tel:+241245654235" class="item-text">telefono : +51 900 456 165</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-open"></ion-icon>
+              </div>
+
+              <a href="zluiszx8@gmail.com" class="item-text">Email : Neo@Store.com</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Products</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Graphics (26)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Backgrounds (11)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Fonts (9)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Music (3)</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Photography (3)</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Necesitas Ayuda?</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms & Conditions</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Refund Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Use Cases</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Siguenos</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #3b5998">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #55acee">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #d71e18">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #1565c0">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <div class="footer-newsletter">
+
+            <p class="footer-list-title">Contactanos</p>
+
+            <form action="" class="footer-newsletter">
+              <input type="email" name="email_address" aria-label="email" placeholder="ingresa tu email..." required
+                class="email-field">
+
+              <button type="submit" class="footer-btn" aria-label="submit">
+                <ion-icon name="rocket"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 Neo Store. Todos los derechos reservados  por   <a href="#" class="copyright-link">...</a>
+        </p>
+
+        <img src="./assets/images/footer-bottom-img.png" width="340" height="21" loading="lazy" alt=""
+          class="footer-bottom-img">
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html> 
